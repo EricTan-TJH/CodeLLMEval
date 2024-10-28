@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "电商产品库API",
-    "_postman_id": "12345678-1234-1234-1234-123456789012",
-    "description": "API collection for 电商产品库",
+    "name": "类目后台API",
+    "_postman_id": "unique-id",
+    "description": "Postman collection for Category API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -70,7 +70,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"name\": \"\",\n  \"level\": 0,\n  \"parentId\": 0,\n  \"path\": \"\",\n  \"status\": 1,\n  \"sort\": 0,\n  \"remarks\": \"\",\n  \"createId\": 0,\n  \"updateId\": 0,\n  \"createTime\": \"\",\n  \"updateTime\": \"\"\n}"
+          "raw": "{\n  \"name\": \"\",\n  \"level\": 1,\n  \"parent_id\": 0,\n  \"path\": \"\",\n  \"status\": 1,\n  \"sort\": 0,\n  \"remarks\": \"\",\n  \"create_id\": 0,\n  \"update_id\": 0,\n  \"create_time\": \"\",\n  \"update_time\": \"\"\n}"
         },
         "url": {
           "raw": "http://127.0.0.1:8099/categories",
@@ -93,7 +93,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"level\": 0,\n  \"parentId\": 0,\n  \"path\": \"\",\n  \"status\": 1,\n  \"sort\": 0,\n  \"remarks\": \"\",\n  \"createId\": 0,\n  \"updateId\": 0,\n  \"createTime\": \"\",\n  \"updateTime\": \"\"\n}"
+          "raw": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"level\": 1,\n  \"parent_id\": 0,\n  \"path\": \"\",\n  \"status\": 1,\n  \"sort\": 0,\n  \"remarks\": \"\",\n  \"create_id\": 0,\n  \"update_id\": 0,\n  \"create_time\": \"\",\n  \"update_time\": \"\"\n}"
         },
         "url": {
           "raw": "http://127.0.0.1:8099/categories",

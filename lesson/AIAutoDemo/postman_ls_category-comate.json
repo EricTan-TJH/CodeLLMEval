@@ -1,0 +1,90 @@
+{
+    "info": {
+        "_postman_id": "a7503f09-f41c-4e18-b7f3-75b7531f0b7a",
+        "name": "类目后台API-AutoDemo",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "获取所有商品类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/lsCategory/",
+                "method": "GET",
+                "header": []
+            },
+            "response": []
+        },
+        {
+            "name": "根据ID获取商品类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/lsCategory/{id}",
+                "method": "GET",
+                "header": [],
+                "pathVariable": [
+                    {
+                        "key": "id",
+                        "value": "1"
+                    }
+                ]
+            },
+            "response": []
+        },
+        {
+            "name": "创建新的商品类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/lsCategory/",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"新类目\",\n    \"code\": \"1001\",\n    \"sort\": 0,\n    \"status\": 0,\n    \"level\": 3,\n    \"parent_id\": 0\n}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "更新商品类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/lsCategory/{id}",
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "pathVariable": [
+                    {
+                        "key": "id",
+                        "value": "1"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"更新类目\",\n    \"code\": \"1002\",\n    \"sort\": 0,\n    \"status\": 0,\n    \"level\": 3,\n    \"parent_id\": 0\n}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "删除商品类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/lsCategory/{id}",
+                "method": "DELETE",
+                "header": [],
+                "pathVariable": [
+                    {
+                        "key": "id",
+                        "value": "1"
+                    }
+                ]
+            },
+            "response": []
+        }
+    ]
+}

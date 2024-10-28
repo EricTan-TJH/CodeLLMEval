@@ -1,0 +1,111 @@
+{
+    "info": {
+        "_postman_id": "some-unique-id",
+        "name": "类目后台API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "获取所有类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/categories",
+                "method": "GET",
+                "header": []
+            }
+        },
+        {
+            "name": "根据ID获取类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/categories/{{id}}",
+                "method": "GET",
+                "header": [],
+                "pathVariable": [
+                    {
+                        "key": "id",
+                        "value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "name": "搜索类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/categories/search?id={{id}}&name={{name}}",
+                "method": "GET",
+                "header": [],
+                "queryParam": [
+                    {
+                        "key": "id",
+                        "value": "",
+                        "description": "类目ID，可选"
+                    },
+                    {
+                        "key": "name",
+                        "value": "",
+                        "description": "类目名称，可选"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "添加类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/categories",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"类目名称\",\n    \"level\": 1,\n    \"parent_id\": 0,\n    \"path\": \"类目路径\",\n    \"status\": 1,\n    \"sort\": 0,\n    \"remarks\": \"备注\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "更新类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/categories",
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"id\": 1,\n    \"name\": \"更新后的类目名称\",\n    \"level\": 1,\n    \"parent_id\": 0,\n    \"path\": \"更新后的类目路径\",\n    \"status\": 1,\n    \"sort\": 0,\n    \"remarks\": \"更新后的备注\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "删除类目",
+            "request": {
+                "url": "http://127.0.0.1:8099/categories/{{id}}",
+                "method": "DELETE",
+                "header": [],
+                "pathVariable": [
+                    {
+                        "key": "id",
+                        "value": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
