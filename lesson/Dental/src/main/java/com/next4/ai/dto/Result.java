@@ -1,4 +1,4 @@
-package ai.next.dto;
+package com.next4.ai.dto;
 
 import lombok.Data;
 import java.io.Serializable;

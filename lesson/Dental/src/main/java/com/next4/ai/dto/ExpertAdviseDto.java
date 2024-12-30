@@ -1,4 +1,4 @@
-package ai.next.dto;
+package com.next4.ai.dto;
 
 import lombok.Data;
 import java.util.Date;
@@ -11,8 +11,4 @@ public class ExpertAdviseDto {
     private DoctorDto doctorDto;
     private Date createdAt;
     private Date updatedAt;
-
-
-
-
 }
