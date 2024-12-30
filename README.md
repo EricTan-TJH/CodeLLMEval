@@ -24,7 +24,7 @@ https://survey.stackoverflow.co/2024/ai#sentiment-and-usage
 | Context learning capability | Test the accuracy of context understanding and reasoning | 1 |
 * Dead loop search
 Compare and evaluate the effectiveness
-![loop](assets/loop.jpg)
+![loop](assets/loop.png)
 * Lookuping for multi threaded deadlock 
 * Memory leakage
 
