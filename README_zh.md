@@ -9,9 +9,36 @@
 | [内存泄露、内存溢出]()                 | 严重导致OOM，服务挂掉      | 2        |
 | [线程死锁]()                          |  并发线程竞争资源死锁，严重导致CPU100%或者OOM，服务不可用或者挂掉                              | 2  |
 | [并发数据不一致]()                          |  多线程情况不当操作导致数据不一致、脏数据                              | 1  |
+
+## 高级生成模版
+### 数据建模能力
+ * [数据库表设计生成](prompt-template/template-chinese.md)
+### 上下文理解和推理能力
+ * [上下文真实项目案例](common-scenarios/api-chinese.md)
+### 长文本/长Token 处理能力
+ * [长Token真实项目案例](common-scenarios/longContext-chinese.md) 
+## HumanEval 的介绍
+ * pass@K [算法的详细推导](human-eval/passk-chinese.md)
+
  * 死循环查找  
-对比测评效果
-![# loop](assets/loop.jpg)
+```
+下面代码有没有问题：
+public class endlessLoop {
+    public static void main(String[] args) {
+        int count = 0;
+        while(count < 10) {
+            if(count == 3) {
+                continue;
+            }
+            System.out.println(count);
+            count++;
+        }
+    }
+}
+``` 
+![# loop](assets/loop.png)
+甚至把里面参数随机修改后，之前识别是死循环的工具，也会提示不是死循环
+![# loop](assets/loop_marcode.png)
  * 多线程死锁查找
  * 内存泄露
 测评集demo
@@ -59,14 +86,8 @@
 ```
 对比测评效果  
 ![# oom](assets/oom.jpg)
-## 专家能力测评模式
-| 缺陷场景                                                           | 严重结果                          | 测试集case  |
+## 大模型专家能力测评模式
+| 场景                                                           | 严重结果                          | 测试集case  |
 | ------------------------------------------------------ | ------------------------------------------- | --------- |
-| [业务逻辑错误]()                          |  逻辑严重不合理、数据明显错误等，同时看是否具备专业能力                              | 1  |
-## 高级生成模版
-### 数据建模
- * [数据库表设计生成](prompt-template/template-chinese.md)
-
-
-## HumanEval 的介绍
- * pass@K [算法的详细推导](human-eval/passk-chinese.md)
+| [专业领域知识储备](common-scenarios/knowledge_chinese.md)                          |  逻辑严重不合理、数据明显错误等，是否具备专业知识能力                              | 1  |
+| 领域业务逻辑判断                          |  具备专业知识能力进行缺陷判定                              | 1  |
