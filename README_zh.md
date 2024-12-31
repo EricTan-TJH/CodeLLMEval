@@ -6,7 +6,12 @@
 ### 上下文理解和推理能力
  * [上下文真实项目案例](common-scenarios/api-chinese.md)
 ### 长文本/长Token 处理能力
- * [长Token真实项目案例](common-scenarios/longContext-chinese.md) 
+ * [长Token真实项目案例](common-scenarios/longContext-chinese.md)
+## 大模型专家能力测评模式
+| 场景                                                           | 严重结果                          | 测试集case  |
+| ------------------------------------------------------ | ------------------------------------------- | --------- |
+| [专业领域知识储备](common-scenarios/knowledge-chinese.md)                          |  逻辑严重不合理、数据明显错误等，是否具备专业知识能力                              | 1  |
+| 领域业务逻辑判断                          |  具备专业知识能力进行缺陷判定                              | 1  |
 ## HumanEval 的介绍
  * pass@K [算法的详细推导](human-eval/passk-chinese.md)
    
@@ -84,8 +89,4 @@ public class endlessLoop {
 ```
 对比测评效果  
 ![# oom](assets/oom.jpg)
-## 大模型专家能力测评模式
-| 场景                                                           | 严重结果                          | 测试集case  |
-| ------------------------------------------------------ | ------------------------------------------- | --------- |
-| [专业领域知识储备](common-scenarios/knowledge-chinese.md)                          |  逻辑严重不合理、数据明显错误等，是否具备专业知识能力                              | 1  |
-| 领域业务逻辑判断                          |  具备专业知识能力进行缺陷判定                              | 1  |
+
