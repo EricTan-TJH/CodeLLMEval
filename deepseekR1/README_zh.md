@@ -2,12 +2,13 @@
 # R1
 
 ## 创新点
- - 1、deekseek 预训练  强化学习 RL 提高推理效率非常高：采用GRPO，优化过去 RLHF- PPO，MCTS 走不通
+ - 1、deekseek 预训练，强化学习 RL 提高推理效率非常高：采用GRPO，优化过去 RLHF- PPO，MCTS 走不通，特别是代码、数学、推理
  - 2、Long COT ，with thousands of long Chain-of-Thought (CoT) examples ,替代过去大量的SFT训练, deepseek 的 Long COT体现在 think 标签中，可以很清晰理解模型的COT过程 
  - 3、蒸馏对小模型逻辑推理明显增强
 
  > * 1、3 被国内外技术认证
  > * https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
+ > * https://x.com/i/bookmarks?post_id=1883204996596130154
 
 
 
@@ -19,8 +20,10 @@ We design an FP8 mixed precision training framework and, for the first time, val
 Post-Training: Knowledge Distillation from DeepSeek-R1
 We introduce an innovative methodology to distill reasoning capabilities from the longChain-of-Thought (CoT) model
  - 3、更经济的模型训练，优化Attention的 MLA 和 Moe 的DeepSeekMoE
+ > * 2 被国内外技术认证
  > * Architecture
  > * We first introduce the basic architecture of DeepSeek-V3, featured by Multi-head Latent Attention (MLA) (DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai et al., 2024) for economical training
+  > * https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf
 
 # 编码的逻辑推理能力测评
  * 基于开源的 Deepseek R1，两个参数版本 8b、32b

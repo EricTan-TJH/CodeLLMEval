@@ -1,5 +1,9 @@
 # CodeLLMEval
 基于编程典型场景的测评集，有打分模式，专家能力测评模式，也有参考模版
+
+## 🔥 New
+[DeepSeek R1 编码能力真实测评](deepseekR1/README_zh.md) 
+
 ## 高级生成模版
 ### 数据建模能力
  * [数据库表设计生成](prompt-template/template-chinese.md)
