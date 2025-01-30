@@ -6,6 +6,10 @@ Evaluation based on programming scenarios
 ## \[ English | [中文](README_zh.md) \]
 👋 Join our [WeChat](assets/wechat.jpg) 
 
+
+## 🔥 New
+[DeepSeek R1 Coding Ability Review](deepseekR1/README_zh.md) 
+
 ## stackoverflow 2024 real sentiments behind the surge in AI popularity
 https://survey.stackoverflow.co/2024/ai#sentiment-and-usage
 
